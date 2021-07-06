@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>Human Facial Sadness Behaviour</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div>
+        <img src="static\images\banner2.jpeg" class="w3-border w3-padding" alt="Kalam Sardar AI PVT LTD"
+            style="width:100%">
+    </div>
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+ 
+                    <h5>
+ 
+                      This Model Predict that The Person is belongs to sad behavior,A morose person is sullen, gloomy, sad, glum, and depressed — not a happy camper. When someone is morose, they seem to have a cloud of sadness hanging over them. This word is stronger than just sad — morose implies being extremely gloomy and depressed.</br></br>
+                      এই মডেলটি ভবিষ্যদ্বাণী করে যে ব্যক্তিটি দুঃখজনক আচরণের অন্তর্ভুক্ত, একজন মুরোস ব্যক্তি হতাশ, উদাসীন, দু: খিত, আড়ষ্ট এবং হতাশ - কোনও খুশি শিবির নয়। কেউ যখন মুরোস হয় তখন তাদের মনে হয় তাদের গায়ে দুঃখের মেঘ ঝুলছে। এই শব্দটি কেবল দু: খের চেয়েও শক্তিশালী - মুরোজ বলতে বোঝায় যে চরম অন্ধকার এবং হতাশাগ্রস্ত</br></br>
+                      यह मॉडल भविष्यवाणी करता है कि व्यक्ति उदास व्यवहार से संबंधित है, एक उदास व्यक्ति उदास, उदास, उदास, उदास और उदास है - एक खुश टूरिस्ट नहीं। जब कोई उदास होता है, तो ऐसा लगता है कि उसके ऊपर उदासी का बादल मंडरा रहा है। यह शब्द सिर्फ उदास होने से ज्यादा मजबूत है - मनोविकार का अर्थ है अत्यंत उदास और उदास होना</br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+</body>
+ 
+</html>

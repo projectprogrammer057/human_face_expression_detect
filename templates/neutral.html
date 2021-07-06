@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>Human Facial Neutral Behaviour</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div>
+        <img src="static\images\banner2.jpeg" class="w3-border w3-padding" alt="Kalam Sardar AI PVT LTD"
+            style="width:100%">
+    </div>
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+ 
+                    <h5>
+ 
+                      This Model Predict that The Person is belongs to neutral behavior,Neutral person means an impartial third party, who serves as a mediator, fact finder, or arbitrator, or otherwise functions to assist the parties to resolve the issues in contro- versy. A neutral person may be a permanent or temporary officer or employee of the Federal Government or any other individual who is acceptable to the parties</br></br>
+                      এই মডেল ভবিষ্যদ্বাণী করে যে ব্যক্তি নিরপেক্ষ আচরণের সাথে সম্পর্কিত, নিরপেক্ষ ব্যক্তির অর্থ নিরপেক্ষ তৃতীয় পক্ষ, যিনি মধ্যস্থতা, ফ্যাক্ট ফাইন্ডার, বা সালিশী হিসাবে কাজ করেন বা অন্যথায় দলগুলিকে বিপরীতে সমস্যা সমাধানে সহায়তা করার জন্য কাজ করে। একটি নিরপেক্ষ ব্যক্তি স্থায়ী বা অস্থায়ী কর্মকর্তা বা ফেডারেল সরকার বা পক্ষের কাছে গ্রহণযোগ্য অন্য কোনও ব্যক্তি বা কর্মচারী হতে পারে</br></br>
+                      यह मॉडल भविष्यवाणी करता है कि व्यक्ति तटस्थ व्यवहार से संबंधित है, तटस्थ व्यक्ति का अर्थ है एक निष्पक्ष तृतीय पक्ष, जो मध्यस्थ, तथ्य खोजक, या मध्यस्थ के रूप में कार्य करता है, या अन्यथा विवाद में मुद्दों को हल करने के लिए पक्षों की सहायता करने के लिए कार्य करता है। एक तटस्थ व्यक्ति संघीय सरकार का स्थायी या अस्थायी अधिकारी या कर्मचारी या कोई अन्य व्यक्ति हो सकता है जो पार्टियों को स्वीकार्य हो</br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+</body>
+ 
+</html>

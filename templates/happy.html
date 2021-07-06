@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>Human Facial Happy Behaviour</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div>
+        <img src="static\images\banner2.jpeg" class="w3-border w3-padding" alt="Kalam Sardar AI PVT LTD"
+            style="width:100%">
+    </div>
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+ 
+                    <h5>
+ 
+                      This Model Predict that The Person is belongs to happy behavior,In terms of personality, happy people tend to be more extroverted — so they like the company of others. They're energized by the social world. ... Also happy people are highly extroverted and are low in neuroticism. That really means they're people who aren't anxious, who do not worry.</br></br>
+                      এই মডেলটি ভবিষ্যদ্বাণী করে যে ব্যক্তিটি সুখী আচরণের অন্তর্ভুক্ত, ব্যক্তিত্বের দিক থেকে সুখী মানুষগুলি আরও বহির্মুখী হতে থাকে - তাই তারা অন্যের সঙ্গ পছন্দ করে। তারা সামাজিক বিশ্বের দ্বারা উত্সাহিত হয়। ... এছাড়াও সুখী ব্যক্তিরা অত্যন্ত বহির্মুখী এবং স্নায়ুবিকতায় কম। এর অর্থ হ'ল তারা এমন লোক যারা উদ্বিগ্ন নয়, যারা চিন্তা করবেন না।</br></br>
+                      यह मॉडल भविष्यवाणी करता है कि व्यक्ति खुश व्यवहार से संबंधित है, व्यक्तित्व के संदर्भ में, खुश लोग अधिक बहिर्मुखी होते हैं - इसलिए वे दूसरों की कंपनी पसंद करते हैं। वे सामाजिक दुनिया से सक्रिय हैं। ... साथ ही खुश लोग अत्यधिक बहिर्मुखी होते हैं और विक्षिप्तता में कम होते हैं। इसका वास्तव में मतलब है कि वे ऐसे लोग हैं जो चिंतित नहीं हैं, जो चिंता नहीं करते हैं।</br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+</body>
+ 
+</html>

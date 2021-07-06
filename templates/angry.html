@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>Human Facial Angar Behaviour</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div>
+        <img src="static\images\banner2.jpeg" class="w3-border w3-padding" alt="Kalam Sardar AI PVT LTD"
+            style="width:100%">
+    </div>
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+ 
+                    <h5>
+ 
+                        This Model Predict that The Person is Very Anger and more Agressive,Anger, in its strong form, impairs one's ability to process information and to exert cognitive control over one's behavior. An angry person may lose their objectivity,​ ...</br></br>
+                       এই মডেলটি ভবিষ্যদ্বাণী করে যে ব্যক্তি অত্যন্ত রাগী এবং আরও আক্রমণাত্মক, ক্রোধ তার  আকারে তথ্য প্রক্রিয়াকরণের এবং কারও আচরণের উপর জ্ঞানীয় নিয়ন্ত্রণ অর্জনের ক্ষমতা ক্ষুণ্ন করে। একজন রাগান্বিত ব্যক্তি তাদের উদ্দেশ্যমূলকতা হারাতে পারে, ...</br></br>
+                        यह मॉडल भविष्यवाणी करता है कि व्यक्ति बहुत क्रोधी और अधिक आक्रामक है, क्रोध, अपने मजबूत रूप में, सूचनाओं को संसाधित करने और किसी के व्यवहार पर संज्ञानात्मक नियंत्रण करने की क्षमता को कम करता है। क्रोधित व्यक्ति अपनी निष्पक्षता खो सकता है,...</br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+</body>
+ 
+</html>

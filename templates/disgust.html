@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>Human Facial Disgust Behaviour</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div>
+        <img src="static\images\banner2.jpeg" class="w3-border w3-padding" alt="Kalam Sardar AI PVT LTD"
+            style="width:100%">
+    </div>
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+ 
+                    <h5>
+ 
+                        This Model Predict that The Person is belongs to disgust behavior,Disgust is one of the seven universal emotions and arises as a feeling of aversion towards something offensive. We can feel disgusted by something we perceive with our physical senses (sight, smell, touch, sound, taste), by the actions or appearances of people, and even by ideas.</br></br>
+                       এই মডেলটি ভবিষ্যদ্বাণী করে যে ব্যক্তিটি ঘৃণিত আচরণের অন্তর্ভুক্ত, বিতৃষ্ণা হ'ল সাতটি সর্বজনীন আবেগগুলির মধ্যে একটি এবং এটি আপত্তিকর কোনও কিছুর প্রতি বিরূপ অনুভূতি হিসাবে দেখা দেয়। আমরা আমাদের শারীরিক ইন্দ্রিয় (দর্শন, গন্ধ, স্পর্শ, শব্দ, স্বাদ), মানুষের ক্রিয়া বা উপস্থিতির দ্বারা এবং এমনকি ধারণাগুলির দ্বারা এমন কিছু দ্বারা আমরা বিরক্ত বোধ করতে পারি।</br></br>
+                       यह मॉडल भविष्यवाणी करता है कि व्यक्ति घृणित व्यवहार से संबंधित है, घृणा सात सार्वभौमिक भावनाओं में से एक है और कुछ आक्रामक के प्रति घृणा की भावना के रूप में उत्पन्न होती है। हम अपनी भौतिक इंद्रियों (दृष्टि, गंध, स्पर्श, ध्वनि, स्वाद), लोगों के कार्यों या दिखावे, और यहां तक ​​​​कि विचारों से भी किसी चीज से घृणा महसूस कर सकते हैं।</br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+</body>
+ 
+</html>

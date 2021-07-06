@@ -1,0 +1,73 @@
+#Import necessary libraries
+from flask import Flask, render_template, request
+ 
+import numpy as np
+import os
+ 
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.models import load_model
+ 
+#load model
+model =load_model("model\model.h5")
+ 
+print('@@ Model loaded')
+ 
+ 
+def pred_face_detect(face_detect):
+  test_image = load_img(face_detect, target_size = (200, 200)) # load image
+  print("@@ Got I0.1:5000/ mage for prediction")
+   
+  test_image = img_to_array(test_image)/255 # convert image to np array and normalize
+  test_image = np.expand_dims(test_image, axis = 0) # change dimention 3D to 4D
+   
+  result = model.predict(test_image).round(3) # predict diseased palnt or not
+  print('@@ Raw result = ', result)
+   
+  pred = np.argmax(result) # get the index of max value
+ 
+  if pred == 0:
+    return "Angry Personality", 'angry.html' # if index 0
+  elif pred == 1:
+    return "Disgust Personality", 'disgust.html'  # if index 1
+  elif pred == 2:
+    return "Fear Personality", 'fear.html'  # if index 2
+  elif pred == 3:
+    return "Happy Personality", 'happy.html'  # if index 1
+  elif pred == 4:
+    return "Neutral Personality", 'neutral.html'  # if index 2
+  elif pred == 5:
+    return "Sad Personality", 'sad.html'  # if index 3
+  else:
+    return "Surprise Personality", 'surprise.html' # if index 4
+
+     
+ 
+# Create flask instance
+app = Flask(__name__)
+ 
+# render index.html page
+@app.route("/", methods=['GET', 'POST'])
+def home():
+        return render_template('index.html')
+     
+  
+# get input image from client then predict class and render respective .html page for solution
+@app.route("/predict", methods = ['GET','POST'])
+def predict():
+     if request.method == 'POST':
+        file = request.files['image'] # fet input
+        filename = file.filename        
+        print("@@ Input posted = ", filename)
+         
+        file_path = os.path.join('static/user uploaded', filename)
+        file.save(file_path)
+ 
+        print("@@ Predicting class......")
+        pred, output_page = pred_face_detect(face_detect=file_path)
+               
+        return render_template(output_page, pred_output = pred, user_image = file_path)
+     
+# For local system & cloud
+if __name__ == "__main__":
+    app.run(threaded=False)
